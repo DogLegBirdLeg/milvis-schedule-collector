@@ -40,7 +40,7 @@ def get_schedules(sheet_info):
 total = []
 total += get_schedules(sheet.Weekday)
 total += get_schedules(sheet.Holiday)
-total += get_schedules(sheet.OnlyCampus)
+total += get_schedules(sheet.CampusOnly)
 
 
 client = MongoClient(host=mongodb.host, username=mongodb.username, password=mongodb.password)
